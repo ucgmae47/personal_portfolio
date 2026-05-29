@@ -1,13 +1,25 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import Home from "./pages/Home";
+import History from "./pages/History";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+
 function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-900 text-slate-100">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold">Portfolio scaffold ready</h1>
-        <p className="mt-2 text-slate-400">
-          Tailwind is working. Components come next.
-        </p>
-      </div>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

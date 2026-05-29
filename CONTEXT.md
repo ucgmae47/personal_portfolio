@@ -143,43 +143,27 @@ Tool card flip: CSS 3D Y-axis flip on hover/tap
 Timeline line: scroll-linked height animation using Framer Motion useScroll and useTransform
 
 
-Teaching & Learning Style — This Is Non-Negotiable
-I want to learn through this project, not just have code generated for me. You must follow this approach for every new concept we encounter:
+Teaching & Learning Style — Current Preferences (these supersede earlier versions)
 
-Explain first — Before writing any code for a concI haven't seen in this stack, explain how it works in plain language. No code yet.
-Minimal example — Show me the simplest possible isolated working example of just that concept.
-Hand it to me — Give me a skeleton with clearly labeled gaps and tell me what each gap needs to accomplish. Wait for me to attempt it.
-Debrief — Review what I wrote, explain what I got right or wrong, then show the complete correct version.
-Then scale — After we've done one guided example together, you may implement the remaining repetitive instances of that concept on your own.
+Where my content lives:
+- All portfolio content (name, roles, links, tools, projects, timeline) is HARDCODED in the frontend in src/data/ as reusable variables (single source of truth — edit once, used everywhere). It is NOT stored in the database.
+- The database is used ONLY for contact form submissions (data created by site visitors at runtime).
 
-Always invite me to ask questions before moving on to the next concept. Never introduce more than one new concept at a time. If you find yourself about to generate a large block of code covering something new, stop and go back to step 1.
-Concepts in this project that are new relative to my Flask/React experience and require the full guided treatment:
+Frontend:
+- Do NOT teach or involve me in frontend work. Build the entire frontend (React, Tailwind, Framer Motion, components, pages, animations, styling) independently with full creative freedom.
+- Ask me for my specific personal information (name, links, project details, etc.) when you need it; I'll provide it.
 
-FastAPI route structure and Pydantic models (different pattern than Flask)
-FastAPI dependency injecng Depends()
-Framer Motion scroll-linked animations (useScroll, useTransform)
-Framer Motion whileInView with staggered children
-CSS 3D card flip implementation
-Environment variable management across both frontend and backend
-MySQL connection pooling in FastAPI (different from Flask-SQLAlchemy)
-Deployment configuration (AWS or Render/Railway)
+Backend & database:
+- Go ahead and BUILD the backend and database yourself (no step-by-step guided walkthrough needed). Just EXPLAIN afterwards: (a) how you set it up, and (b) how I can edit/extend it in the future.
+- If you make important design choices regarding the backend or database, tell me about them explicitly.
 
-Concepts I already know well — implement these freely without the guided walkthrough:
-
-Basic React component structure and props
-React Router setup
-Standard MySQL queries
-REST API conventions
-Tailwind utility class styling
-Basic fetch/axios API calls
-
-If I say "just build it" for any concept, override the teaching mode for that moment only and generate the code directly. Then return to teaching mode for the next new concept.
+General notifications:
+- Surface important overall project design choices before committing to a direction.
+- Let me know whenever you need my input, intervention, or real content.
 
 General Rules for Our Sessions
 
-Always scaffold the file/folder structure and confirm it with me before generating component code
-Commit checkpoints: remind me to git commit after every working feature with a suggested descriptive commit message
-Never hardcode credentials — always use .env and remind me to add .env to .gitignore
-If you're about to make an assumption about layout, data structure, or behavior, ask me first instead
-If I ask you to proceed and something is ambiguous, flag the ambiguity and give me two options rather than guessing
-Keep a running mental note of anywhere data is hardcoded so we can replace it systematically in the backend phase
+Commit checkpoints: remind me to git commit after every working feature with a suggested descriptive commit message.
+Never hardcode credentials — always use .env and remind me to add .env to .gitignore.
+If you're about to make a significant assumption about backend/database structure or behavior, flag it and give me options rather than guessing.
+Keep a running note of anywhere data is hardcoded.
