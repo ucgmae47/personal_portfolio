@@ -7,6 +7,7 @@ import { profile } from "../data/profile";
 const navLinks = [
   { label: "Home", to: "/" },
   { label: "History", to: "/history" },
+  { label: "Education", to: "/education" },
   { label: "Projects", to: "/projects" },
   { label: "Contact", to: "/contact" },
 ];
@@ -46,7 +47,7 @@ function Navbar() {
           {profile.name}
         </NavLink>
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-5 lg:gap-8 md:flex">
           {navLinks.map(({ label, to }) => (
             <li key={to}>
               <NavLink

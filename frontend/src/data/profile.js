@@ -4,6 +4,9 @@
 export const profile = {
   name: "Caleb Elder",
   initials: "CE",
+  university: "University of Georgia",
+  universityShort: "UGA",
+  gpa: "3.98",
   // Role titles cycled by the typewriter in the hero.
   roles: [
     "Full-Stack Developer",

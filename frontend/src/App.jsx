@@ -4,17 +4,22 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import History from "./pages/History";
+import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
+// Vite sets BASE_URL from vite.config.js (e.g. "/personal_portfolio/" on Pages).
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename === "/" ? undefined : basename}>
       <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/history" element={<History />} />
+        <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

@@ -1,57 +1,66 @@
-// TODO(content): replace with your real projects, links, and tech stacks.
+// Real projects from local repos + GitHub.
 // `featured: true` projects also appear in the Home page preview.
 export const projects = [
   {
-    title: "Portfolio Website",
+    title: "LinguaPath",
     description:
-      "This very site — a React + FastAPI portfolio with animated sections and a MySQL-backed contact form.",
+      "Personalized language-learning platform with CEFR assessment onboarding, AI story generation, conversational practice, behavioral interest tracking, and a multi-feature learner dashboard for Spanish (and expanding languages).",
+    tech: ["Next.js", "TypeScript", "Supabase", "Tailwind", "AI SDK"],
+    github: "https://github.com/ucgmae47/language-learning-app",
+    demo: "",
+    featured: true,
+  },
+  {
+    title: "Cinema E-Booking System",
+    description:
+      "Team Software Engineering term project — full cinema booking flow with movie search, seat selection, checkout, payments, promotions, admin portals, and email confirmations. Built with design patterns (Facade, Builder, Adapter, Proxy).",
+    tech: ["React", "TypeScript", "Flask", "MySQL", "Docker"],
+    github: "https://github.com/Ryan-Cortez/SoftwareEngineering",
+    demo: "",
+    featured: true,
+  },
+  {
+    title: "VIPR Math Assessment",
+    description:
+      "Undergraduate research tooling for AI4STEM / VIPR — LLM pipelines that grade student math work from images and analyze reasoning, plus ML evaluation utilities for automated assessment experiments.",
+    tech: ["Python", "OpenAI", "PyTorch", "scikit-learn"],
+    github: "https://github.com/ucgmae47/math_assessment",
+    demo: "",
+    featured: true,
+  },
+  {
+    title: "Athens Figure Skating Club Site",
+    description:
+      "Full-stack club website with member auth, role-based admin controls, event schedules, officer pages, and private media served from Backblaze B2.",
+    tech: ["Python", "Flask", "MySQL", "JavaScript", "SQLAlchemy"],
+    github: "https://github.com/ucgmae47/skating_site",
+    demo: "",
+    featured: false,
+  },
+  {
+    title: "Chinese Story API App",
+    description:
+      "CSCI 1302 JavaFX app that generates Chinese reading passages with Cohere based on skill level, then enriches characters with hover translations via a Chinese Character REST API.",
+    tech: ["Java", "JavaFX", "HTTP", "Gson"],
+    github: "https://github.com/ucgmae47/cs1302-api-app",
+    demo: "",
+    featured: false,
+  },
+  {
+    title: "Royal Subversion",
+    description:
+      "Turn-based JavaFX board game — knight vs. rebel wizard and soldier on a custom grid with dice rolls, lives, star objectives, and win/lose overlays.",
+    tech: ["Java", "JavaFX"],
+    github: "https://github.com/ucgmae47/royal-subversion",
+    demo: "",
+    featured: false,
+  },
+  {
+    title: "Personal Portfolio",
+    description:
+      "This site — React + Tailwind portfolio with animated sections, an Education page backed by transcript data, and a FastAPI/MySQL contact form.",
     tech: ["React", "FastAPI", "MySQL", "Tailwind"],
-    github: "https://github.com/your-handle/portfolio",
-    demo: "https://your-portfolio.com",
-    featured: true,
-  },
-  {
-    title: "Task Manager API",
-    description:
-      "A RESTful task management backend with authentication, filtering, and full CRUD operations.",
-    tech: ["Python", "FastAPI", "MySQL"],
-    github: "https://github.com/your-handle/task-api",
-    demo: "",
-    featured: true,
-  },
-  {
-    title: "Weather Dashboard",
-    description:
-      "A responsive dashboard that visualizes live weather data from a public API with charts.",
-    tech: ["React", "JavaScript", "HTML/CSS"],
-    github: "https://github.com/your-handle/weather-dashboard",
-    demo: "https://your-weather-demo.com",
-    featured: true,
-  },
-  {
-    title: "Inventory Tracker",
-    description:
-      "A full-stack CRUD app for tracking inventory with search, sorting, and CSV export.",
-    tech: ["React", "Python", "MySQL"],
-    github: "https://github.com/your-handle/inventory-tracker",
-    demo: "",
-    featured: false,
-  },
-  {
-    title: "Markdown Notes",
-    description:
-      "A local-first notes app with live markdown preview and keyboard-driven navigation.",
-    tech: ["React", "JavaScript"],
-    github: "https://github.com/your-handle/markdown-notes",
-    demo: "https://your-notes-demo.com",
-    featured: false,
-  },
-  {
-    title: "DevOps Sandbox",
-    description:
-      "Containerized microservices demo with Docker Compose and a CI pipeline.",
-    tech: ["Docker", "Python", "Git"],
-    github: "https://github.com/your-handle/devops-sandbox",
+    github: "",
     demo: "",
     featured: false,
   },

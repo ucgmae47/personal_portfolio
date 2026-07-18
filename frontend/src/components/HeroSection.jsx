@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import Typewriter from "./Typewriter";
+import { UgaLogo } from "./BrandIcons";
 import { profile } from "../data/profile";
 
 const container = {
@@ -59,6 +60,32 @@ function HeroSection() {
         >
           <Typewriter words={profile.roles} />
         </motion.p>
+
+        <motion.div
+          variants={item}
+          className="mt-6 flex flex-wrap items-center justify-center gap-3"
+        >
+          <Link
+            to="/education"
+            className="inline-flex items-center gap-2.5 rounded-full bg-white/10 px-4 py-2 ring-1 ring-white/15 transition-colors hover:bg-white/15"
+          >
+            <UgaLogo size={28} />
+            <span className="text-sm font-medium text-white/90">
+              {profile.university}
+            </span>
+          </Link>
+          <Link
+            to="/education"
+            className="inline-flex items-center gap-2 rounded-full bg-emerald-500/15 px-4 py-2 ring-1 ring-emerald-400/40 transition-colors hover:bg-emerald-500/25"
+          >
+            <span className="text-xs font-semibold uppercase tracking-wider text-emerald-300/90">
+              GPA
+            </span>
+            <span className="text-lg font-bold tabular-nums text-white">
+              {profile.gpa}
+            </span>
+          </Link>
+        </motion.div>
 
         <motion.div
           variants={item}

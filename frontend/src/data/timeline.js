@@ -7,9 +7,10 @@ export const timeline = [
     title: "B.S. Computer Science & B.S. Applied Mathematics",
     org: "University of Georgia",
     bullets: [
-      "4.0 GPA across a double major in Computer Science and Applied Mathematics.",
-      "Completed: Software Development, Data Structures, Theory of Computing, Systems Programming, Discrete Math, Linear Algebra, Mathematical Analysis.",
-      "In progress: Software Engineering, Algorithms, Computer Architecture, Computer Networks, Graph Theory.",
+      "3.98 GPA across a double major in Computer Science and Applied Mathematics.",
+      "Completed: Software Engineering, Algorithms, Computer Architecture, Computer Networks, Data Structures, Systems Programming, Theory of Computing, Graph Theory.",
+      "In progress (Fall 2026): Web Programming, Combinatorics, Calculus III, Differential Equations.",
+      "Honors: Presidential Scholar; Dean's List.",
     ],
   },
   {

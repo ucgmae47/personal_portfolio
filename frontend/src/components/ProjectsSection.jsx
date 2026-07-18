@@ -18,7 +18,7 @@ function ProjectsSection() {
   const featured = projects.filter((p) => p.featured).slice(0, 3);
 
   return (
-    <section className="bg-slate-50 px-6 py-24">
+    <section className="bg-white px-6 py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
           <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">
