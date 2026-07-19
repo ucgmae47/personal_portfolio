@@ -9,6 +9,7 @@ export const profile = {
   gpa: "3.98",
   // Role titles cycled by the typewriter in the hero.
   roles: [
+    "Software Engineering Intern",
     "Full-Stack Developer",
     "CS & Applied Math Student",
     "Undergraduate Researcher",

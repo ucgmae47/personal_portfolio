@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap, Trophy, Users } from "lucide-react";
+
+const ICONS = {
+  work: Briefcase,
+  education: GraduationCap,
+  activity: Trophy,
+  leadership: Users,
+};
 
 function TimelineItem({ entry, index }) {
   const isLeft = index % 2 === 0;
-  const Icon = entry.type === "work" ? Briefcase : GraduationCap;
+  const Icon = ICONS[entry.type] ?? Briefcase;
 
   return (
     <div className="relative flex md:min-h-[1px] md:items-center">

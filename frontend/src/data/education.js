@@ -21,14 +21,16 @@ export const education = {
     },
   ],
   honors: [
-    "Presidential Scholar (Fall 2024, Spring 2025, Fall 2025)",
-    "Dean's List (Spring 2026)",
-    "Good Standing",
+    "Hollingsworth Award in Linear Algebra",
+    "President’s Honor Roll",
+    "Dean’s List",
+    "Zell Miller Scholarship",
   ],
   highlights: [
     "3.98 institutional GPA across a double major in Computer Science and Applied Mathematics.",
     "119 credit hours earned; strong record in systems, algorithms, software engineering, and advanced math.",
-    "Active undergraduate researcher (AI4STEM / VIPR) alongside full course loads.",
+    "Relevant coursework includes Algorithms, Data Structures, Graph Theory, Applied Linear Algebra, Discrete Mathematics, Systems Programming, Computer Architecture, Computer Networks, Theory of Computing, Mathematical Analysis, Software Engineering, and Software Development.",
+    "Software Engineering Intern at Fetch Freight; previously undergraduate researcher (AI4STEM / VIPR).",
   ],
   // Downloadable PDFs in frontend/public/
   transcriptUrl: "/transcript-spring-2026.pdf",
@@ -45,7 +47,17 @@ export const coursework = [
       { code: "CSCI 1301", title: "Intro Computing and Programming", grade: "A", credits: 4 },
       { code: "CSCI 2610", title: "Discrete Mathematics for CSCI", grade: "A", credits: 4 },
       { code: "FYOS 1001", title: "First Year Odyssey", grade: "A", credits: 1 },
-      { code: "MATH 3300", title: "Applied Linear Algebra", grade: "A", credits: 3 },
+      {
+        code: "MATH 3300",
+        title: "Applied Linear Algebra",
+        grade: "A",
+        credits: 3,
+        award: {
+          name: "Hollingsworth Award",
+          detail:
+            "Awarded by Professor David Plaxco for earning the highest grade in the class.",
+        },
+      },
       { code: "MUSI 2040", title: "History of Popular Music", grade: "A", credits: 3 },
     ],
   },

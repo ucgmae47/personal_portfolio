@@ -130,7 +130,7 @@ function Education() {
         >
           <div className="mb-6 flex items-center gap-3">
             <Award className="text-amber-500" size={26} />
-            <h2 className="text-2xl font-bold text-slate-900">Honors</h2>
+            <h2 className="text-2xl font-bold text-slate-900">Achievements</h2>
           </div>
           <div className="flex flex-wrap gap-3">
             {education.honors.map((honor) => (
@@ -197,9 +197,9 @@ function Education() {
             {coursework.map((term) => (
               <div
                 key={term.term}
-                className="overflow-hidden rounded-2xl bg-white ring-1 ring-slate-200"
+                className="rounded-2xl bg-white ring-1 ring-slate-200"
               >
-                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 bg-slate-50/80 px-5 py-4">
+                <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-2xl border-b border-slate-100 bg-slate-50/80 px-5 py-4">
                   <div>
                     <h3 className="font-semibold text-slate-900">{term.term}</h3>
                     <p className="text-sm text-slate-500">{term.standing}</p>
@@ -211,8 +211,8 @@ function Education() {
                     </span>
                   </p>
                 </div>
-                <div className="overflow-x-auto">
-                  <table className="w-full min-w-[480px] text-left text-sm">
+                <div className="rounded-b-2xl">
+                  <table className="w-full text-left text-sm">
                     <thead>
                       <tr className="border-b border-slate-100 text-xs uppercase tracking-wider text-slate-400">
                         <th className="px-5 py-3 font-medium">Course</th>
@@ -230,8 +230,36 @@ function Education() {
                           <td className="px-5 py-3 font-medium tabular-nums text-slate-800">
                             {course.code}
                           </td>
-                          <td className="px-5 py-3 text-slate-600">
-                            {course.title}
+                          <td className="relative px-5 py-3 text-slate-600">
+                            <span className="inline-flex items-center gap-1.5">
+                              {course.title}
+                              {course.award && (
+                                <span className="group relative inline-flex">
+                                  <button
+                                    type="button"
+                                    aria-label={course.award.name}
+                                    className="rounded-full p-0.5 text-amber-500 transition-colors hover:bg-amber-50 hover:text-amber-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
+                                  >
+                                    <Award size={16} aria-hidden="true" />
+                                  </button>
+                                  <span
+                                    role="tooltip"
+                                    className="pointer-events-none absolute left-1/2 top-full z-30 mt-2 w-64 -translate-x-1/2 rounded-xl bg-slate-900 px-3.5 py-3 text-left text-xs leading-relaxed text-white opacity-0 shadow-lg ring-1 ring-white/10 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100"
+                                  >
+                                    <span
+                                      aria-hidden="true"
+                                      className="absolute bottom-full left-1/2 -translate-x-1/2 border-4 border-transparent border-b-slate-900"
+                                    />
+                                    <span className="block font-semibold text-amber-300">
+                                      {course.award.name}
+                                    </span>
+                                    <span className="mt-1 block text-slate-200">
+                                      {course.award.detail}
+                                    </span>
+                                  </span>
+                                </span>
+                              )}
+                            </span>
                           </td>
                           <td className="px-5 py-3 font-semibold text-emerald-700">
                             {course.grade}
@@ -247,31 +275,45 @@ function Education() {
               </div>
             ))}
 
-            {/* In progress */}
-            <div className="overflow-hidden rounded-2xl bg-white ring-1 ring-dashed ring-slate-300">
-              <div className="border-b border-slate-100 bg-emerald-50/60 px-5 py-4">
-                <h3 className="font-semibold text-slate-900">
-                  {inProgress.term} — In Progress
-                </h3>
+            {/* In progress — same layout as completed terms, without GPA/grade */}
+            <div className="overflow-hidden rounded-2xl bg-white ring-1 ring-slate-200">
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 bg-slate-50/80 px-5 py-4">
+                <div>
+                  <h3 className="font-semibold text-slate-900">
+                    {inProgress.term}
+                  </h3>
+                  <p className="text-sm text-slate-500">In Progress</p>
+                </div>
               </div>
-              <ul className="divide-y divide-slate-50">
-                {inProgress.courses.map((course) => (
-                  <li
-                    key={course.code}
-                    className="flex flex-wrap items-baseline justify-between gap-2 px-5 py-3 text-sm"
-                  >
-                    <span>
-                      <span className="font-medium tabular-nums text-slate-800">
-                        {course.code}
-                      </span>
-                      <span className="ml-3 text-slate-600">{course.title}</span>
-                    </span>
-                    <span className="tabular-nums text-slate-400">
-                      {course.credits} cr
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[480px] text-left text-sm">
+                  <thead>
+                    <tr className="border-b border-slate-100 text-xs uppercase tracking-wider text-slate-400">
+                      <th className="px-5 py-3 font-medium">Course</th>
+                      <th className="px-5 py-3 font-medium">Title</th>
+                      <th className="px-5 py-3 font-medium">Credits</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {inProgress.courses.map((course) => (
+                      <tr
+                        key={course.code}
+                        className="border-b border-slate-50 last:border-0"
+                      >
+                        <td className="px-5 py-3 font-medium tabular-nums text-slate-800">
+                          {course.code}
+                        </td>
+                        <td className="px-5 py-3 text-slate-600">
+                          {course.title}
+                        </td>
+                        <td className="px-5 py-3 tabular-nums text-slate-500">
+                          {course.credits}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </motion.section>

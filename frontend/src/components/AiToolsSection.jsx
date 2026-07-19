@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
+import { ClaudeIcon, CopilotIcon, CursorIcon } from "./BrandIcons";
 import { aiTools } from "../data/aiTools";
+
+const LOGO_ICONS = {
+  cursor: CursorIcon,
+  claude: ClaudeIcon,
+  copilot: CopilotIcon,
+};
 
 const container = {
   hidden: {},
@@ -38,25 +45,29 @@ function AiToolsSection() {
           viewport={{ once: true, amount: 0.25 }}
           className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8"
         >
-          {aiTools.map((tool) => (
-            <motion.div
-              key={tool.name}
-              variants={item}
-              className="flex flex-col items-center text-center md:items-start md:text-left"
-            >
-              <div
-                className={`grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br ${tool.accent} text-sm font-bold tracking-wide text-white shadow-md`}
+          {aiTools.map((tool) => {
+            const Logo = LOGO_ICONS[tool.logo];
+            return (
+              <motion.div
+                key={tool.name}
+                variants={item}
+                className="flex flex-col items-center text-center md:items-start md:text-left"
               >
-                {tool.monogram}
-              </div>
-              <h3 className="mt-5 text-xl font-semibold text-slate-900">
-                {tool.name}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                {tool.blurb}
-              </p>
-            </motion.div>
-          ))}
+                <div
+                  className={`grid h-14 w-14 place-items-center rounded-2xl shadow-md ${tool.tile}`}
+                  aria-hidden="true"
+                >
+                  {Logo ? <Logo size={28} /> : null}
+                </div>
+                <h3 className="mt-5 text-xl font-semibold text-slate-900">
+                  {tool.name}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  {tool.blurb}
+                </p>
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>

@@ -15,7 +15,7 @@ const item = {
 };
 
 function ProjectsSection() {
-  const featured = projects.filter((p) => p.featured).slice(0, 3);
+  const featured = projects.filter((p) => p.featured).slice(0, 2);
 
   return (
     <section className="bg-white px-6 py-24">

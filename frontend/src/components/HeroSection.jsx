@@ -97,12 +97,12 @@ function HeroSection() {
           >
             View My Work
           </a>
-          <Link
-            to="/contact"
+          <a
+            href={`mailto:${profile.links.email}`}
             className="rounded-lg border border-white/20 px-6 py-3 font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/10"
           >
             Get In Touch
-          </Link>
+          </a>
         </motion.div>
       </motion.div>
 

@@ -1,8 +1,21 @@
 import { useState } from "react";
+import { toolLogos } from "../data/toolLogos";
 
-// TODO(content): swap the monogram badge for real tool logos if desired.
+function ToolLogo({ name, svg, color }) {
+  return (
+    <span
+      role="img"
+      aria-label={`${name} logo`}
+      className="inline-flex h-10 w-10 items-center justify-center"
+      style={{ color }}
+      dangerouslySetInnerHTML={{ __html: svg }}
+    />
+  );
+}
+
 function ToolCard({ tool }) {
   const [flipped, setFlipped] = useState(false);
+  const logo = toolLogos[tool.name];
 
   return (
     <div
@@ -18,8 +31,14 @@ function ToolCard({ tool }) {
       >
         {/* Front face */}
         <div className="backface-hidden absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <div className="grid h-16 w-16 place-items-center rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-500 text-2xl font-bold text-white">
-            {tool.name.charAt(0)}
+          <div className="grid h-16 w-16 place-items-center rounded-xl bg-slate-50 ring-1 ring-slate-200">
+            {logo ? (
+              <ToolLogo name={tool.name} svg={logo.svg} color={logo.color} />
+            ) : (
+              <span className="text-2xl font-bold text-slate-400">
+                {tool.name.charAt(0)}
+              </span>
+            )}
           </div>
           <h3 className="text-lg font-semibold text-slate-800">{tool.name}</h3>
         </div>

@@ -9,7 +9,8 @@ const navLinks = [
   { label: "History", to: "/history" },
   { label: "Education", to: "/education" },
   { label: "Projects", to: "/projects" },
-  { label: "Contact", to: "/contact" },
+  // Contact hidden until the remote backend is ready.
+  // { label: "Contact", to: "/contact" },
 ];
 
 const iconButtons = [

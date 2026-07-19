@@ -4,8 +4,8 @@ export const projects = [
   {
     title: "LinguaPath",
     description:
-      "Personalized language-learning platform with CEFR assessment onboarding, AI story generation, conversational practice, behavioral interest tracking, and a multi-feature learner dashboard for Spanish (and expanding languages).",
-    tech: ["Next.js", "TypeScript", "Supabase", "Tailwind", "AI SDK"],
+      "Full-stack Spanish/French learning platform (CEFR A1–C2) with AI stories, streaming tutoring (GPT-4o-mini), dictionary/conjugations, spaced-repetition vocab, multiplayer games, Supabase RLS + Realtime rooms, and structured AI pipelines with Zod schemas.",
+    tech: ["Next.js", "TypeScript", "Supabase", "Vercel AI SDK", "Zod"],
     github: "https://github.com/ucgmae47/language-learning-app",
     demo: "",
     featured: true,
@@ -26,13 +26,13 @@ export const projects = [
     tech: ["Python", "OpenAI", "PyTorch", "scikit-learn"],
     github: "https://github.com/ucgmae47/math_assessment",
     demo: "",
-    featured: true,
+    featured: false,
   },
   {
     title: "Athens Figure Skating Club Site",
     description:
-      "Full-stack club website with member auth, role-based admin controls, event schedules, officer pages, and private media served from Backblaze B2.",
-    tech: ["Python", "Flask", "MySQL", "JavaScript", "SQLAlchemy"],
+      "Responsive full-stack club site with dynamic event scheduling, interactive member profiles, media cloud storage, cryptographic password hashing, role-based admin access, and ORM-backed MySQL schemas.",
+    tech: ["Python", "Flask", "MySQL", "JavaScript", "HTML/CSS"],
     github: "https://github.com/ucgmae47/skating_site",
     demo: "",
     featured: false,
