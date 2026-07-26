@@ -11,7 +11,7 @@ export const profile = {
   roles: [
     "Software Engineering Intern",
     "Full-Stack Developer",
-    "CS & Applied Math Student",
+    "Computer Science Student",
     "Undergraduate Researcher",
   ],
   // Short intro shown on the contact page.
@@ -21,8 +21,7 @@ export const profile = {
     linkedin: "https://www.linkedin.com/in/calebelder-compsci",
     github: "https://github.com/ucgmae47",
     // Your resume lives in frontend/public/. Update this to match the filename.
-    // (Recommend renaming the file to "resume.pdf" for a cleaner URL.)
-    resume: "/Résumé-4.pdf",
+    resume: "/resume.pdf",
     email: "caleb.elder4@icloud.com",
   },
 };

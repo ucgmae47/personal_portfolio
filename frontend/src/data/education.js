@@ -8,16 +8,12 @@ export const education = {
   location: "Athens, GA",
   gpa: "3.98",
   gpaScale: "4.00",
-  expectedGraduation: "2027",
-  dateRange: "2023 — 2027 (Expected)",
+  expectedGraduation: "December 2026",
+  dateRange: "2023 — December 2026 (Expected)",
   degrees: [
     {
       title: "B.S. Computer Science",
       department: "School of Computing",
-    },
-    {
-      title: "B.S. Applied Mathematics",
-      department: "Department of Mathematics",
     },
   ],
   honors: [
@@ -27,7 +23,7 @@ export const education = {
     "Zell Miller Scholarship",
   ],
   highlights: [
-    "3.98 institutional GPA across a double major in Computer Science and Applied Mathematics.",
+    "3.98 institutional GPA pursuing a B.S. in Computer Science.",
     "119 credit hours earned; strong record in systems, algorithms, software engineering, and advanced math.",
     "Relevant coursework includes Algorithms, Data Structures, Graph Theory, Applied Linear Algebra, Discrete Mathematics, Systems Programming, Computer Architecture, Computer Networks, Theory of Computing, Mathematical Analysis, Software Engineering, and Software Development.",
     "Software Engineering Intern at Fetch Freight; previously undergraduate researcher (AI4STEM / VIPR).",

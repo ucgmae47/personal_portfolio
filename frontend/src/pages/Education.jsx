@@ -91,10 +91,16 @@ function Education() {
         >
           <div className="mb-6 flex items-center gap-3">
             <GraduationCap className="text-[#BA0C2F]" size={26} />
-            <h2 className="text-2xl font-bold text-slate-900">Degrees</h2>
+            <h2 className="text-2xl font-bold text-slate-900">
+              {education.degrees.length > 1 ? "Degrees" : "Degree"}
+            </h2>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div
+            className={`grid gap-4 ${
+              education.degrees.length > 1 ? "sm:grid-cols-2" : "max-w-xl"
+            }`}
+          >
             {education.degrees.map((degree) => (
               <div
                 key={degree.title}
