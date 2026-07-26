@@ -20,8 +20,8 @@ export const profile = {
   links: {
     linkedin: "https://www.linkedin.com/in/calebelder-compsci",
     github: "https://github.com/ucgmae47",
-    // Your resume lives in frontend/public/. Update this to match the filename.
-    resume: "/resume.pdf",
+    // Your resume lives in frontend/public/. BASE_URL is required for GitHub Pages.
+    resume: `${import.meta.env.BASE_URL}resume.pdf`,
     email: "caleb.elder4@icloud.com",
   },
 };

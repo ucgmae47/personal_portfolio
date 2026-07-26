@@ -28,8 +28,8 @@ export const education = {
     "Relevant coursework includes Algorithms, Data Structures, Graph Theory, Applied Linear Algebra, Discrete Mathematics, Systems Programming, Computer Architecture, Computer Networks, Theory of Computing, Mathematical Analysis, Software Engineering, and Software Development.",
     "Software Engineering Intern at Fetch Freight; previously undergraduate researcher (AI4STEM / VIPR).",
   ],
-  // Downloadable PDFs in frontend/public/
-  transcriptUrl: "/transcript-spring-2026.pdf",
+  // Downloadable PDFs in frontend/public/. BASE_URL is required for GitHub Pages.
+  transcriptUrl: `${import.meta.env.BASE_URL}transcript-spring-2026.pdf`,
   transcriptLabel: "Unofficial Transcript (Spring 2026)",
 };
 
