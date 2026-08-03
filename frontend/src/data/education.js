@@ -102,9 +102,9 @@ export const coursework = [
 export const inProgress = {
   term: "Fall 2026",
   courses: [
-    { code: "CSCI 4300", title: "Web Programming", credits: 4 },
+    { code: "CSCI 4170", title: "Computational Investing", credits: 4 },
+    { code: "CSCI 4530", title: "Introduction to Robotics", credits: 4 },
     { code: "CSCI 4670", title: "Combinatorics", credits: 3 },
-    { code: "MATH 2270", title: "Calc III Science and Math", credits: 4 },
-    { code: "MATH 2700", title: "Elementary Differential Equations", credits: 3 },
+    { code: "PEDB 1607", title: "Intro to Ballroom - Lead/Male", credits: 1 },
   ],
 };
