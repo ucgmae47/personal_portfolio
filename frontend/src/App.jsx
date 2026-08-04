@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import GoatCounterTracker from "./components/GoatCounterTracker";
 import Home from "./pages/Home";
 import History from "./pages/History";
 import Education from "./pages/Education";
@@ -16,6 +17,7 @@ function App() {
   return (
     <BrowserRouter basename={basename === "/" ? undefined : basename}>
       <ScrollToTop />
+      <GoatCounterTracker />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
