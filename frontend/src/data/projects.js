@@ -4,7 +4,7 @@ export const projects = [
   {
     title: "LinguaPath",
     description:
-      "Full-stack Spanish/French learning platform (CEFR A1–C2) with AI stories, streaming tutoring (GPT-4o-mini), dictionary/conjugations, spaced-repetition vocab, multiplayer games, Supabase RLS + Realtime rooms, and structured AI pipelines with Zod schemas.",
+      "AI language-learning platform (CEFR A1–C2) with graded reading, interactive games, SM-2 vocab drills, and real-time multiplayer. Behavioral interest engine personalizes tutoring; multi-provider AI pipelines (Gemini, Groq, GPT-4o-mini, ElevenLabs) with streaming chat, Zod validation, Supabase RLS, and feature-flag cost controls.",
     tech: ["Next.js", "TypeScript", "Supabase", "Vercel AI SDK", "Zod"],
     github: "https://github.com/ucgmae47/language-learning-app",
     demo: "",
@@ -13,7 +13,7 @@ export const projects = [
   {
     title: "Cinema E-Booking System",
     description:
-      "Team Software Engineering term project — full cinema booking flow with movie search, seat selection, checkout, payments, promotions, admin portals, and email confirmations. Built with design patterns (Facade, Builder, Adapter, Proxy).",
+      "Full-stack cinema platform with dynamic seat selection, payments, promotional discounts, and automated email receipts. Modular Flask REST API and MySQL schema using OOP design patterns (Facade, Adapter), containerized with Docker Compose, delivered iteratively in Agile sprints.",
     tech: ["React", "TypeScript", "Flask", "MySQL", "Docker"],
     github: "https://github.com/Ryan-Cortez/SoftwareEngineering",
     demo: "",

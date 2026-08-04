@@ -21,14 +21,14 @@ export const tools = [
     name: "Node.js",
     years: "1+ year",
     blurb:
-      "Express backends on Azure App Service for negotiation workflows, document pipelines, and TMS integrations.",
+      "Express backends on Azure App Service for document pipelines, portal syncs, SMS alerts, and TMS integrations.",
     level: 85,
   },
   {
     name: "Azure",
     years: "1 year",
     blurb:
-      "App Service, Function Apps, Static Web Apps, Container Instances, and Application Insights for five production systems.",
+      "App Service, Function Apps, Static Web Apps, Container Instances, and Application Insights across a dozen production web apps and services.",
     level: 82,
   },
   {
@@ -84,7 +84,7 @@ export const tools = [
     name: "Playwright",
     years: "< 1 year",
     blurb:
-      "Browser automation workers at Fetch Freight (CarrierPoint portal fills) with dry-run flags and ledger dedup.",
+      "Browser automation workers at Fetch Freight (portal syncs) with dry-run flags and atomic claim-before-send ledger dedup.",
     level: 75,
   },
   {
@@ -112,7 +112,7 @@ export const tools = [
     name: "Next.js",
     years: "1 year",
     blurb:
-      "App Router full-stack LinguaPath — auth, server actions, streaming AI tutoring, and background generation queues.",
+      "App Router full-stack LinguaPath — graded content, streaming multi-provider tutoring, Realtime multiplayer, and cost-gated feature flags.",
     level: 80,
   },
   {

@@ -22,7 +22,7 @@ export const education = {
   ],
   honors: [
     "Hollingsworth Award in Linear Algebra",
-    "President’s Honor Roll",
+    "Presidential Scholar",
     "Dean’s List",
     "Zell Miller Scholarship",
   ],
@@ -30,7 +30,7 @@ export const education = {
     "3.98 institutional GPA pursuing a B.S. in Computer Science with a Minor in Mathematics.",
     "119 credit hours earned; strong record in systems, algorithms, software engineering, and advanced math.",
     "Relevant coursework includes Algorithms, Data Structures, Graph Theory, Applied Linear Algebra, Discrete Mathematics, Systems Programming, Computer Architecture, Computer Networks, Theory of Computing, Mathematical Analysis, Software Engineering, and Software Development.",
-    "Software Engineering Intern at Fetch Freight; previously undergraduate researcher (AI4STEM / VIPR).",
+    "Software Engineering Intern at Fetch Freight shipping production Azure/TypeScript systems; previously undergraduate researcher (AI4STEM / VIPR).",
   ],
   // Downloadable PDFs in frontend/public/. BASE_URL is required for GitHub Pages.
   transcriptUrl: `${import.meta.env.BASE_URL}transcript-spring-2026.pdf`,

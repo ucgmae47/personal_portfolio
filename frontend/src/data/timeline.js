@@ -9,10 +9,10 @@ export const timeline = [
     title: "Software Engineering Intern",
     org: "Fetch Freight · Birmingham, AL",
     bullets: [
-      "Shipped 5 production systems in 8 weeks (Azure, Node.js/TypeScript, React, PostgreSQL), including a full-stack negotiation platform with automated writes into the company’s transportation management system.",
-      "Co-developed an AI document-processing pipeline (Claude vision) that classifies, matches, and autonomously files carrier paperwork, with feedback loops that learn from human corrections.",
-      "Reverse-engineered undocumented legacy systems and rebuilt them as tested cloud services, proving penny-perfect parity across 291 orders and surfacing $720K+ in past-due receivables on the first production run.",
-      "Established the team’s safe-rollout playbook (shadow modes, idempotent send ledgers, feature flags) and owned security fixes including a stored-XSS patch and catching a vendor link exposing edit access to company data.",
+      "Shipped 12 production web apps and serverless services (TypeScript, React, Node.js, Azure), including an AI document engine (Claude Vision) processing 300+ daily invoices and draining a 10-day backlog.",
+      "Engineered event-driven Azure Functions and Playwright/Docker browser workers for portal syncs and real-time SMS alerts, utilizing atomic claim-before-send ledgers to eliminate duplicate sends.",
+      "Strengthened platform security by designing signed single-use capability tokens for unauthenticated workflows, enforcing Postgres Row-Level Security, and resolving a vendor link flaw exposing internal data.",
+      "Reverse-engineered legacy SQL reports into modern web applications with custom parity-check harnesses to reduce TMS database load, while establishing heartbeat alerting to eliminate silent failures.",
     ],
   },
   {
@@ -45,7 +45,7 @@ export const timeline = [
     bullets: [
       "Researched LLM automated assessment models, sourcing benchmark datasets and designing a multimodal rubric integrating text and image data.",
       "Developed Python data pipelines to process spreadsheet metrics into structured JSON, hitting the OpenAI API for reasoning-based grading scores.",
-      "Evaluated system performance with Cohen’s Kappa against human teacher scores; presented findings at the CURO Symposium.",
+      "Evaluated LLM system performance using Cohen’s Kappa, achieving 0.66–0.69 (substantial agreement) across 3 trials correlating model outputs against human teacher scores; presented findings at the CURO Symposium.",
     ],
   },
   {

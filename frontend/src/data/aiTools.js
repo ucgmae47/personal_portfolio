@@ -12,7 +12,7 @@ export const aiTools = [
     name: "Claude",
     logo: "claude",
     blurb:
-      "Production vision models for Fetch Freight’s document-indexing pipeline, plus deep reasoning for design trade-offs and hard debugging.",
+      "Production Claude Vision for Fetch Freight’s AI document engine (300+ daily invoices), plus deep reasoning for design trade-offs and hard debugging.",
     tile: "bg-[#D97757] text-white",
   },
   {
